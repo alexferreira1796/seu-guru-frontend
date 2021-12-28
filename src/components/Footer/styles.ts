@@ -30,11 +30,6 @@ export const List = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    span svg {
-      &:hover {
-        color: ${({ theme }) => theme.colors.primary};
-      }
-    }
   }
 `;
 
