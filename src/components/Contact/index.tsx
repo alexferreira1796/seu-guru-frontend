@@ -14,7 +14,9 @@ function Contact() {
         </S.Subtitle>
         <S.Dropdown>
           <S.Input placeholder="Digite aqui..." />
-          <S.Button onClick={() => setShow(!show)}>veja opções</S.Button>
+          <S.Button show={show} onClick={() => setShow(!show)}>
+            veja opções
+          </S.Button>
         </S.Dropdown>
 
         <S.DropdownResults show={show} />

@@ -4,7 +4,7 @@ interface IContainer {
   image: string;
 }
 
-interface IDropResults {
+interface IShow {
   show: boolean;
 }
 
@@ -85,7 +85,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<IShow>`
   padding: 0px calc(3.18px + 0.68vw) 0px calc(5.35px + 1.36vw);
   background: none;
   cursor: pointer;
@@ -105,10 +105,11 @@ export const Button = styled.button`
     border-right: 5px solid transparent;
     border-top: 5px solid rgb(0, 0, 0);
     margin-left: 11px;
+    transform: ${({ show }) => (show ? 'rotate(180deg)' : 'initial')};
   }
 `;
 
-export const DropdownResults = styled.div<IDropResults>`
+export const DropdownResults = styled.div<IShow>`
   background: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
   box-shadow: rgb(0 0 0 / 10%) 11px 12px 50px;
