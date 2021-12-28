@@ -1,22 +1,29 @@
 import styled from 'styled-components';
 import GuruLogo from '/public/images/SeuGuru.svg';
 
+interface IHeader {
+  scrollPage: boolean;
+}
+
 export const Container = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
-`;
-
-export const Header = styled.header`
-  width: 100%;
-  height: 90px;
-  background-color: ${({ theme }) => theme.colors.primary};
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   position: sticky;
   z-index: 1000;
   top: 0px;
+
+  margin-bottom: -91px;
+`;
+
+export const Header = styled.header<IHeader>`
+  width: 100%;
+  height: 90px;
+  background-color: ${({ scrollPage, theme }) =>
+    scrollPage ? theme.colors.primary : 'trasparent'};
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const ContainerLogo = styled.div`

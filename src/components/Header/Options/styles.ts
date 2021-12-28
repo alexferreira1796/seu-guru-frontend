@@ -5,14 +5,18 @@ interface IColor {
 }
 
 export const Container = styled.div<IColor>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${(props) => (props.color ? props.color : props.theme.colors.white)};
   font-size: 1em;
 
   font-family: 'Eina-Semibold';
   line-height: 20px;
+
+  a {
+    color: ${(props) => (props.color ? props.color : props.theme.colors.white)};
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Icon = styled.div`

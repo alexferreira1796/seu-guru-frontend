@@ -9,10 +9,29 @@ import { Options } from './Options';
 
 function Header() {
   const theme = useTheme();
+  const [scroll, setScroll] = React.useState<boolean>(false);
+
+  React.useEffect(() => {
+    scrollElement();
+  }, [scrollY]);
+
+  function scrollElement(): void {
+    window.addEventListener('scroll', () => {
+      if (scrollY() >= 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    });
+  }
+
+  function scrollY() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+  }
 
   return (
     <S.Container>
-      <S.Header>
+      <S.Header scrollPage={scroll}>
         <S.ContainerLogo>
           <Link href="/">
             <a>
@@ -26,8 +45,14 @@ function Header() {
         </S.ContainerMenu>
 
         <S.ContainerOptions>
-          <Options icon="/images/search.svg">pesquisar</Options>
-          <Options icon="/images/user2.svg" color={theme.colors.secondary}>
+          <Options icon="/images/search.svg" path="#">
+            pesquisar
+          </Options>
+          <Options
+            icon="/images/user2.svg"
+            color={theme.colors.secondary}
+            path="#"
+          >
             área do cliente
           </Options>
         </S.ContainerOptions>
