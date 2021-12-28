@@ -27,9 +27,24 @@ export const List = styled.ul`
     margin-right: 30px;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-      color: ${({ theme }) => theme.colors.primary};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span svg {
+      &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+      }
     }
+  }
+`;
+
+export const Icon = styled.span`
+  transform: rotate(180deg);
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  svg {
+    color: #929292;
   }
 `;
 
@@ -49,6 +64,7 @@ export const BoxSocial = styled.div`
 `;
 
 export const BoxMenu = styled.div`
+  margin-top: 20px;
   li > a {
     font-size: 0.75em;
     font-family: 'Graphik-Regular';

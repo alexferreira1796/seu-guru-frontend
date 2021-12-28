@@ -33,9 +33,9 @@ function Footer() {
         <S.BoxSocial>
           <S.List>
             {Social &&
-              Social.map(({ name, path, icon }) => {
+              Social.map(({ name, path, icon }, index) => {
                 return (
-                  <li>
+                  <li key={`${name}_${index}`}>
                     <Link key={name} href={path}>
                       <a>{icon}</a>
                     </Link>
@@ -48,12 +48,15 @@ function Footer() {
         <S.BoxMenu>
           <S.List>
             {MenuLinks &&
-              MenuLinks.map(({ name, path, icon, active }) => {
+              MenuLinks.map(({ name, path, icon, active }, index) => {
                 const activeClass = active ? 'active' : '';
                 return (
-                  <li>
-                    <Link key={name} href={path}>
-                      <a>{activeClass ? <span>{name}</span> : name}</a>
+                  <li key={`${name}_${index}`}>
+                    <Link href={path}>
+                      <a>
+                        {activeClass ? <span>{name}</span> : name}
+                        <S.Icon>{icon ? icon : ''}</S.Icon>
+                      </a>
                     </Link>
                   </li>
                 );

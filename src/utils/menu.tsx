@@ -1,3 +1,5 @@
+import { BsArrowDown } from 'react-icons/bs';
+
 export const Menu = [
   {
     name: 'Home',
@@ -15,7 +17,7 @@ export const Menu = [
     name: 'Benefícios',
     path: '#home',
     active: false,
-    icon: true,
+    icon: <BsArrowDown />,
   },
   {
     name: 'Planos',
