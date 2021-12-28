@@ -1,4 +1,5 @@
 import * as S from './styles';
+import Image from 'next/image';
 import { Activities } from './Activities';
 
 function Sections() {
@@ -21,6 +22,34 @@ function Sections() {
           position={true}
         />
       </S.ContainerActivitieTwo>
+      <S.ContainerInformations>
+        <S.ContentInformations>
+          <S.Content>
+            <S.Icon>
+              <Image src="/images/locale.png" width={35} height={35} />
+            </S.Icon>
+            <div>
+              <S.Title>Mais de 9.000 academias</S.Title>
+              <S.Paragraph>
+                Faça check-in sempre que quiser em qualquer uma das
+                <br /> academias disponíveis no plano que você escolher.
+              </S.Paragraph>
+            </div>
+          </S.Content>
+          <S.Content>
+            <S.Icon>
+              <Image src="/images/bussines.png" width={35} height={35} />
+            </S.Icon>
+            <div>
+              <S.Title>Acesso exclusivo</S.Title>
+              <S.Paragraph>
+                O Gympass só está disponível para autônomos e MEIs com
+                <br /> CNPJ através da Seu Guru.
+              </S.Paragraph>
+            </div>
+          </S.Content>
+        </S.ContentInformations>
+      </S.ContainerInformations>
     </S.Container>
   );
 }
