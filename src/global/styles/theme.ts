@@ -4,7 +4,7 @@ const theme = {
     secondary: '#C6E209',
     tertiary: '#F8FFDD',
     optional: '#FF685E',
-    border: 'rgba(255,255,255, 0.4);',
+    border: 'rgba(255,255,255, 0.2);',
 
     gray: '#929292',
     white: '#FFFFFF',
