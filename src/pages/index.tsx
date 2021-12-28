@@ -1,6 +1,7 @@
 import { TitleSite } from '../components/TitleSite';
 import { Header } from '../components/Header';
 import { Banner } from '../components/Banner';
+import { Highlights } from '../components/Highlights';
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <TitleSite title="Gympass - Seu Guru" />
       <Header />
       <Banner />
+      <Highlights />
     </>
   );
 };

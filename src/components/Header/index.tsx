@@ -17,7 +17,7 @@ function Header() {
 
   function scrollElement(): void {
     window.addEventListener('scroll', () => {
-      if (scrollY() >= 50) {
+      if (scrollY() >= 20) {
         setScroll(true);
       } else {
         setScroll(false);
