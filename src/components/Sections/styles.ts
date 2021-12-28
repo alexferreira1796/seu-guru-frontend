@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.section`
   height: 100vh;
   background-color: ${({ theme }) => theme.colors.white};
+  position: relative;
+  height: auto;
 `;
 
 export const ContainerActivitieOne = styled.div`
@@ -36,7 +38,7 @@ export const ContentInformations = styled.div`
   width: 1124px;
   margin: 0 auto;
 
-  margin-top: 135px;
+  margin-top: 90px;
 `;
 
 export const Icon = styled.div`
