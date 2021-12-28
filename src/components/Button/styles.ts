@@ -9,7 +9,6 @@ export const Container = styled.button`
   font-family: 'Eina-Semibold';
   text-align: center;
   color: ${({ theme }) => theme.colors.white};
-  padding: 1.2em 2em 1em;
   transition: all 0.2s ease 0s;
   width: 249px;
   height: 66px;

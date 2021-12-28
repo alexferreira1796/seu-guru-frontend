@@ -51,7 +51,7 @@ export const ContainerImageTwo = styled.div<IImage>`
   z-index: 1;
 
   left: 50%;
-  top: 15%;
+  top: 20%;
   transform: translateX(-50%);
 `;
 

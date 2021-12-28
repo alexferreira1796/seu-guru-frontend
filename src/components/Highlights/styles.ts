@@ -13,14 +13,14 @@ export const Title = styled.h2`
 
   text-align: center;
 
-  padding-top: 250px;
+  padding-top: 150px;
 `;
 
 export const ContentBoxes = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 1200px;
+  justify-content: space-between;
+  width: 1110px;
   margin: 0 auto;
   margin-top: 100px;
 `;
