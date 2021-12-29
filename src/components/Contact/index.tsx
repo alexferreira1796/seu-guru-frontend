@@ -23,7 +23,7 @@ function Contact() {
       </S.BoxContact>
       <S.BoxImage>
         <Image
-          src="/images/guru-footer.svg"
+          src="/images/seuguru-footer.png"
           width={818}
           height={450}
           alt="Seu Guru"

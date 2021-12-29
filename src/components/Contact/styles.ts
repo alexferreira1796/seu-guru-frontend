@@ -151,7 +151,13 @@ export const DropdownResults = styled.div<IShow>`
   transform: translateY(-10%);
   pointer-events: none;
 
+  position: absolute;
+  bottom: -180px;
+
   @media screen and (max-width: 600px) {
     width: 100%;
+
+    position: unset;
+    bottom: 0;
   }
 `;
