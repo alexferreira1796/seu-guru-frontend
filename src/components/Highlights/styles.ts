@@ -33,9 +33,9 @@ export const Title = styled.h2`
     padding-top: 300px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     font-size: 1.8em;
-    padding-top: 20px;
+    padding-top: 50px;
   }
 `;
 

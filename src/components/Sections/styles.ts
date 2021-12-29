@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.section`
   height: 100vh;
@@ -9,7 +9,7 @@ export const Container = styled.section`
 `;
 
 export const ContainerActivitieOne = styled.div`
-  padding-top: 150px;
+  padding-top: 250px;
   padding-bottom: 150px;
 
   @media screen and (max-width: 998px) {
@@ -17,7 +17,12 @@ export const ContainerActivitieOne = styled.div`
     padding-bottom: 50px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1900px) {
+    padding-top: 450px;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding-top: 150px;
     padding-bottom: 20px;
   }
 `;
@@ -92,7 +97,7 @@ export const Icon = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: 'Eina-Semibold';
+  font-family: "Eina-Semibold";
   font-size: 1.63em;
   line-height: 35px;
 
@@ -104,7 +109,7 @@ export const Title = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  font-family: 'Graphik-Regular';
+  font-family: "Graphik-Regular";
   font-size: 0.85em;
   line-height: 25px;
   text-align: justify;
