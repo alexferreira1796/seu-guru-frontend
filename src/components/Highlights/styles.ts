@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
@@ -13,7 +13,7 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-family: 'Eina-Semibold';
+  font-family: "Eina-Semibold";
   font-size: 2.25em;
   color: ${({ theme }) => theme.colors.gray_dark};
 
@@ -21,8 +21,16 @@ export const Title = styled.h2`
 
   padding-top: 300px;
 
+  @media screen and (max-width: 1800px) {
+    padding-top: 400px;
+  }
+
   @media screen and (max-width: 998px) {
     padding-top: 250px;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding-top: 300px;
   }
 
   @media screen and (max-width: 600px) {
