@@ -21,6 +21,10 @@ export const Container = styled.section<IContainer>`
 
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+  }
 `;
 
 export const BoxContact = styled.div`
@@ -33,6 +37,14 @@ export const BoxContact = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1em;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    position: relative;
+    transform: translateX(0);
+    left: 0;
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -54,6 +66,10 @@ export const BoxImage = styled.div`
   position: absolute;
   bottom: 0;
   z-index: 1;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Dropdown = styled.div`
@@ -68,6 +84,10 @@ export const Dropdown = styled.div`
   padding: 10px;
   display: flex;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const Input = styled.input`
@@ -82,6 +102,10 @@ export const Input = styled.input`
 
   &:not(:last-child) {
     border-right: 1px solid rgb(221, 221, 221);
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -121,9 +145,13 @@ export const DropdownResults = styled.div<IShow>`
   transition: all 0.3s ease 0s;
   max-height: 300px;
   overflow-y: auto;
-  height: 168px;
+  height: ${({ show }) => (show ? '168px' : 'auto')};
 
   opacity: ${({ show }) => (show ? 1 : 0)};
   transform: translateY(-10%);
   pointer-events: none;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;

@@ -16,7 +16,7 @@ function Options({ color, icon, path, children }: IOptions) {
       <Link href={path}>
         <a>
           <S.Icon>
-            <Image src={icon} width={18} height={18} />
+            <Image src={icon} width={18} height={18} alt="Icone" />
           </S.Icon>
           {children}
         </a>

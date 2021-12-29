@@ -26,7 +26,12 @@ function Sections() {
         <S.ContentInformations>
           <S.Content>
             <S.Icon>
-              <Image src="/images/locale.png" width={35} height={35} />
+              <Image
+                src="/images/locale.png"
+                width={35}
+                height={35}
+                alt="Mais de 9.000 academias"
+              />
             </S.Icon>
             <div>
               <S.Title>Mais de 9.000 academias</S.Title>
@@ -38,7 +43,12 @@ function Sections() {
           </S.Content>
           <S.Content>
             <S.Icon>
-              <Image src="/images/bussines.png" width={35} height={35} />
+              <Image
+                src="/images/bussines.png"
+                width={35}
+                height={35}
+                alt="Acesso exclusivo"
+              />
             </S.Icon>
             <div>
               <S.Title>Acesso exclusivo</S.Title>

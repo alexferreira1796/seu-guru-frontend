@@ -50,4 +50,41 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         cursor: pointer;
     }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @font-face {
+        font-family: 'Graphik-Regular';
+        src: url('/fonts/graphik/Graphik-Regular.woff2') format('woff2'),
+            url('/fonts/graphik/Graphik-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+        @font-face {
+        font-family: 'Graphik-Medium';
+        src: url('/fonts/graphik/Graphik-Medium.woff2') format('woff2'),
+            url('/fonts/graphik/Graphik-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: block;
+    }
+        @font-face {
+        font-family: 'Eina-Regular';
+        src: url('/fonts/eina/Eina01-Regular.woff2') format('woff2'),
+            url('/fonts/eina/Eina01-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+        @font-face {
+        font-family: 'Eina-Semibold';
+        src: url('/fonts/eina/Eina01-Semibold.woff2') format('woff2'),
+            url('/fonts/eina/Eina01-Semibold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: block;
+    }
 `;

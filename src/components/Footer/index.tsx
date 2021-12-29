@@ -11,7 +11,12 @@ function Footer() {
       <S.BoxLogo>
         <Link href="/">
           <a>
-            <Image src="/images/seuguru-footer.svg" width={176} height={53} />
+            <Image
+              src="/images/seuguru-footer.svg"
+              width={176}
+              height={53}
+              alt="Seu Guru"
+            />
           </a>
         </Link>
 

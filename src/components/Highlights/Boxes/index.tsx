@@ -14,7 +14,7 @@ function Boxes({ icon, title, desc, step, color }: IBoxes) {
     <S.Container color={color}>
       <S.Flag color={color}>{step}</S.Flag>
       <S.Icon color={color}>
-        <Image src={icon} width={60} height={60} />
+        <Image src={icon} width={60} height={60} alt={title} />
       </S.Icon>
       <S.Title>{title}</S.Title>
       <S.Description>{desc}</S.Description>

@@ -5,11 +5,21 @@ export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.white};
   position: relative;
   height: auto;
+  z-index: 1;
 `;
 
 export const ContainerActivitieOne = styled.div`
   padding-top: 150px;
   padding-bottom: 150px;
+
+  @media screen and (max-width: 998px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 20px;
+  }
 `;
 
 export const ContainerActivitieTwo = styled.div`
@@ -26,6 +36,12 @@ export const ContainerInformations = styled.div`
   z-index: 1;
 
   display: flex;
+
+  @media screen and (max-width: 998px) {
+    margin-top: 0px;
+    height: auto;
+    padding: 10px;
+  }
 `;
 
 export const ContentInformations = styled.div`
@@ -39,6 +55,17 @@ export const ContentInformations = styled.div`
   margin: 0 auto;
 
   margin-top: 90px;
+
+  @media screen and (max-width: 998px) {
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 20px;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+  }
 `;
 
 export const Icon = styled.div`
@@ -53,6 +80,15 @@ export const Icon = styled.div`
   justify-content: center;
 
   margin-right: 15px;
+
+  @media screen and (max-width: 998px) {
+    width: 45px;
+    height: 45px;
+
+    img {
+      width: 25px !important;
+    }
+  }
 `;
 
 export const Title = styled.h2`
@@ -61,6 +97,10 @@ export const Title = styled.h2`
   line-height: 35px;
 
   color: ${({ theme }) => theme.colors.white};
+
+  @media screen and (max-width: 998px) {
+    font-size: 1.2em;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -70,6 +110,10 @@ export const Paragraph = styled.p`
   text-align: justify;
 
   color: ${({ theme }) => theme.colors.white};
+
+  @media screen and (max-width: 998px) {
+    font-size: 1em;
+  }
 `;
 
 export const Content = styled.div`
@@ -79,4 +123,13 @@ export const Content = styled.div`
   align-items: center;
   gap: 1em;
   max-width: 38vw;
+
+  @media screen and (max-width: 998px) {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 998px) {
+    font-size: 1em;
+  }
 `;

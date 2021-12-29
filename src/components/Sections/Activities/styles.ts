@@ -14,6 +14,8 @@ export const Container = styled.div<IPos>`
   width: 1110px;
   margin: 0 auto;
 
+  max-width: 100%;
+
   flex-direction: ${({ pos }) => (pos ? 'row-reverse' : 'row')};
 
   box-shadow: ${({ pos }) =>
@@ -23,14 +25,37 @@ export const Container = styled.div<IPos>`
   padding-top: ${({ pos }) => (pos ? '3rem' : 0)};
   padding-right: ${({ pos }) => (pos ? '3rem' : 0)};
   padding-bottom: ${({ pos }) => (pos ? '3rem' : 0)};
+
+  @media screen and (max-width: 998px) {
+    flex-direction: column;
+    box-shadow: none;
+    padding: 20px;
+  }
 `;
 
 export const ContentLeft = styled.div`
   width: 50%;
+  max-width: 100%;
+
+  > image {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 998px) {
+    width: 100%;
+  }
 `;
 
 export const ContentRight = styled.div`
   width: 50%;
+
+  @media screen and (max-width: 998px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -39,6 +64,11 @@ export const Title = styled.h2`
   line-height: 61px;
   font-family: 'Eina-Semibold';
   margin-bottom: 1.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5em;
+    line-height: 25px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -46,6 +76,11 @@ export const Subtitle = styled.p`
   font-size: 1.2em;
   font-family: 'Graphik-Regular';
   margin-top: 1.5rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1em;
+    line-height: 25px;
+  }
 `;
 
 export const Description = styled.p`

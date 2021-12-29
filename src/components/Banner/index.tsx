@@ -8,14 +8,19 @@ function Banner() {
     <S.Container image="/images/background.png">
       <S.ContentImages>
         <S.ContainerImageOne image="/images/gympass.svg" />
-        <S.ContainerImageTwo image="/images/ss.png" />
+        <S.ContainerImageTwo image="/images/ss2.png" />
 
         <S.ContentTexts>
           <h2>Academias, estúdios e apps de bem-estar.</h2>
         </S.ContentTexts>
 
         <S.ContentFooter>
-          <Image src="/images/gympass.png" width={164} height={31} />
+          <Image
+            src="/images/gympass.png"
+            width={164}
+            height={31}
+            alt="Gympass"
+          />
           <Button title="Quero Gympass!" />
         </S.ContentFooter>
       </S.ContentImages>

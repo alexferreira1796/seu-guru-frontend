@@ -17,6 +17,10 @@ export const Container = styled.section<IColor>`
   align-items: center;
 
   justify-content: space-evenly;
+
+  @media screen and (max-width: 998px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Flag = styled.div`

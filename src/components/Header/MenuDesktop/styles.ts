@@ -32,6 +32,10 @@ export const Container = styled.nav`
       }
     }
   }
+
+  @media screen and (max-width: 998px) {
+    display: none;
+  }
 `;
 
 export const List = styled.li``;

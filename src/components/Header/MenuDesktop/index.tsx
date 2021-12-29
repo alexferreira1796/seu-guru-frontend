@@ -4,7 +4,7 @@ import * as S from './styles';
 import { BsArrowDown } from 'react-icons/bs';
 
 import { Menu as MenuLinks } from '../../../utils/menu';
-function Menu() {
+function MenuDesktop() {
   return (
     <S.Container>
       <ul>
@@ -27,4 +27,4 @@ function Menu() {
   );
 }
 
-export { Menu };
+export { MenuDesktop };

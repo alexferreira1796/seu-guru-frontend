@@ -4,7 +4,8 @@ import * as S from './styles';
 
 import { useTheme } from 'styled-components';
 
-import { Menu } from './Menu';
+import { MenuDesktop } from './MenuDesktop';
+import { MenuMobile } from './MenuMobile';
 import { Options } from './Options';
 
 function Header() {
@@ -41,7 +42,8 @@ function Header() {
         </S.ContainerLogo>
 
         <S.ContainerMenu>
-          <Menu />
+          <MenuDesktop />
+          <MenuMobile />
         </S.ContainerMenu>
 
         <S.ContainerOptions>

@@ -12,9 +12,20 @@ export const Container = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 998px) {
+    flex-direction: column;
+  }
 `;
 
-export const BoxLogo = styled.div``;
+export const BoxLogo = styled.div`
+  @media screen and (max-width: 998px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+`;
 
 export const List = styled.ul`
   margin-top: 20px;
@@ -30,6 +41,20 @@ export const List = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      margin: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 20px;
+
+    a {
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
   }
 `;
 
@@ -56,6 +81,10 @@ export const BoxSocial = styled.div`
   svg {
     font-size: 1.12em;
   }
+
+  @media screen and (max-width: 998px) {
+    align-self: center;
+  }
 `;
 
 export const BoxMenu = styled.div`
@@ -67,5 +96,13 @@ export const BoxMenu = styled.div`
     span {
       color: ${({ theme }) => theme.colors.secondary};
     }
+  }
+
+  @media screen and (max-width: 998px) {
+    font-size: 1em;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;

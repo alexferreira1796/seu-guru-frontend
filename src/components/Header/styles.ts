@@ -24,6 +24,10 @@ export const Header = styled.header<IHeader>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    overflow: hidden;
+  }
 `;
 
 export const ContainerLogo = styled.div`
@@ -51,6 +55,11 @@ export const ContainerMenu = styled.div`
   height: 90px;
   flex: 2 0 546px;
   padding: 0 60px 0 60px;
+
+  @media screen and (max-width: 998px) {
+    height: auto;
+    flex: 0;
+  }
 `;
 
 export const ContainerOptions = styled.div`
@@ -60,4 +69,8 @@ export const ContainerOptions = styled.div`
   justify-content: space-around;
   gap: 2em;
   flex: 1 0 282px;
+
+  @media screen and (max-width: 998px) {
+    display: none;
+  }
 `;

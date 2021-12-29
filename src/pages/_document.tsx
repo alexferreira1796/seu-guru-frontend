@@ -53,7 +53,6 @@ export default class MyDocument extends Document {
             href="/images/favicon.svg"
           ></link>
           <meta name="author" content="Alex Ferreira" />
-          <link href="/fonts/style.css" rel="stylesheet" />
         </Head>
         <body></body>
         <Main />

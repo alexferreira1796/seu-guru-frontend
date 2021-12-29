@@ -29,7 +29,7 @@ function Activities({
       </S.ContentLeft>
 
       <S.ContentRight>
-        <Image src={image} width={525} height={397} />
+        <Image src={image} width={525} height={397} alt={title} />
       </S.ContentRight>
     </S.Container>
   );
