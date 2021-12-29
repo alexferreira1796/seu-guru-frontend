@@ -52,7 +52,7 @@ export const ContainerImageOne = styled.div<IImage>`
     background-size: contain;
   }
   @media screen and (max-width: 400px) {
-    top: 90px;
+    top: 100px;
   }
 `;
 
