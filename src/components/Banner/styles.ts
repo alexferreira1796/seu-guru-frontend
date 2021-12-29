@@ -51,6 +51,9 @@ export const ContainerImageOne = styled.div<IImage>`
     width: 100%;
     background-size: contain;
   }
+  @media screen and (max-width: 400px) {
+    top: 90px;
+  }
 `;
 
 export const ContainerImageTwo = styled.div<IImage>`
