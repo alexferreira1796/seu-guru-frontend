@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -81,8 +81,8 @@ export const GlobalStyle = createGlobalStyle`
     }
         @font-face {
         font-family: 'Eina-Semibold';
-        src: url('/fonts/eina/Eina01-Semibold.woff2') format('woff2'),
-            url('/fonts/eina/Eina01-Semibold.woff') format('woff');
+        src: url('/fonts/eina/Eina01-SemiBold.woff2') format('woff2'),
+            url('/fonts/eina/Eina01-SemiBold.woff') format('woff');
         font-weight: 600;
         font-style: normal;
         font-display: block;
